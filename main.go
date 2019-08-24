@@ -26,7 +26,7 @@ func tick() error {
 }
 
 func main() {
-	defer common.Cleanup()
+	defer common.Done()
 
 	common.Run(nil)
 }
