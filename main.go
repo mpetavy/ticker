@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	common.Init("ticker", "1.0.24", "2018", "service demo", "mpetavy", common.APACHE, "https://github.com/mpetavy/worktime", true, start, stop, tick, time.Second)
+	common.Init("1.0.24", "2018", "service demo", "mpetavy", common.APACHE, true, start, stop, tick, time.Second)
 }
 
 func start() error {
