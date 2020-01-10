@@ -1,13 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/mpetavy/common"
 )
 
 func init() {
-	common.Init("1.0.24", "2018", "service demo", "mpetavy", common.APACHE, true, start, stop, tick, time.Second)
+	common.Init("1.0.24", "2018", "service demo", "mpetavy", fmt.Sprintf("https://github.com/mpetavy/%s", common.Title()), common.APACHE, true, start, stop, tick, time.Second)
 }
 
 func start() error {
