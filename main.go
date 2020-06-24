@@ -12,12 +12,12 @@ func init() {
 }
 
 func start() error {
-	common.Info("ticker start!!")
+	common.Info("ticker START!!")
 	return nil
 }
 
 func stop() error {
-	common.Info("ticker stop!!")
+	common.Info("ticker STOP!!")
 	return nil
 }
 
