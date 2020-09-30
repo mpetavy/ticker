@@ -8,7 +8,7 @@ import (
 )
 
 func init() {
-	common.Init(true, "1.0.24", "2018", "service demo", "mpetavy", fmt.Sprintf("https://github.com/mpetavy/%s", common.Title()), common.APACHE, start, stop, tick, time.Second)
+	common.Init(true, "1.0.24", "", "2018", "service demo", "mpetavy", fmt.Sprintf("https://github.com/mpetavy/%s", common.Title()), common.APACHE, start, stop, tick, time.Second)
 }
 
 func start() error {
