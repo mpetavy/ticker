@@ -1,13 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"embed"
 	"github.com/mpetavy/common"
 	"time"
 )
 
+//go:embed go.mod
+var resources embed.FS
+
 func init() {
-	common.Init("ticker", "", "", "", "2018", "service demo", "mpetavy", fmt.Sprintf("https://github.com/mpetavy/%s", common.Title()), common.APACHE, nil, start, stop, run, time.Second)
+	common.Init("", "", "", "", "service demo", "", "", "", &resources, start, stop, run, time.Second)
 }
 
 func start() error {
